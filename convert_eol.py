@@ -37,6 +37,6 @@ def convert_eol(file_path):
 
     print(f"Converted EOL characters in {file_path} to {repr(eol)}")
 
-# EOL conversion for the following files
-convert_eol('/app/ollama-build.sh')
-convert_eol('/app/ollama-startup.sh')
+# Prompt the user for the file path
+file_path = input("Enter the path to the .sh file to convert EOL characters: ")
+convert_eol(file_path)
